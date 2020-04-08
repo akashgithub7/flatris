@@ -25,3 +25,10 @@ steps:
 - task: PublishBuildArtifacts@1
   inputs:
     ArtifactName: 'war'
+    pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
+- task: PublishBuildArtifacts@1
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'FilePath'
+    TargetPath: '/home/vsts/work/1/a'
