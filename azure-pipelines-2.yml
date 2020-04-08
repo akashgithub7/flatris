@@ -22,10 +22,7 @@ steps:
     npm run build
   displayName: 'npm install and build'
   
-- task: PublishBuildArtifacts@1
-  inputs:
-    ArtifactName: 'war'
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)' 
+  
 - task: PublishBuildArtifacts@1
   inputs:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
