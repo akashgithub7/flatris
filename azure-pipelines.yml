@@ -22,7 +22,6 @@ steps:
 
 - task: PublishBuildArtifacts@1
   inputs:
-    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    PathtoPublish: '/home/vsts/work/1/a'
     ArtifactName: 'drop'
-    publishLocation: 'FilePath'
-    TargetPath: 'Azure Pipelines/TFS'
+    publishLocation: 'Container'
