@@ -25,4 +25,4 @@ steps:
     PathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'drop'
     publishLocation: 'FilePath'
-    TargetPath: '\'
+    TargetPath: 'Azure Pipelines/TFS'
